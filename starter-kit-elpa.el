@@ -11,6 +11,10 @@
                                    'yaml-mode
                                    'find-file-in-project
                                    'magit
+                                   'textmate
+                                   'less
+                                   'json
+                                   'css-mode
                                    'gist)
   "Libraries that should be installed by default.")
 
