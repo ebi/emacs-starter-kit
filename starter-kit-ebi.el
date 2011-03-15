@@ -1,5 +1,9 @@
 ;; General Settings
 (global-linum-mode 1)
+(add-to-list 'load-path (concat dotfiles-dir "/lib"))
+
+;; PHP Mode
+(require 'php-mode)
 
 ;; ***** TABBAR *********
 ;;(require 'tabbar)
@@ -44,6 +48,12 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
+
+;;Temp Files in .emacs.d
+(setq backup-directory-alist
+      `((".*" . ,"~/.emacs.d/cache")))
+(setq auto-save-file-name-transforms
+      `((".*" ,"~/.emacs.d/cache" t)))
 
 ;; ************ OTHER ***********
   (setq inhibit-startup-message t

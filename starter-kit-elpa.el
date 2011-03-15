@@ -15,6 +15,8 @@
                                    'less
                                    'json
                                    'css-mode
+                                   'diff-git
+                                   'eproject
                                    'gist)
   "Libraries that should be installed by default.")
 
